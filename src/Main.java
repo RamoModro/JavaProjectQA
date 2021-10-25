@@ -6,7 +6,8 @@ public class Main {
 
         int a=11;
         double b=13;
-        System.out.println("Rezultatul impartirii:" + (a/b));
+        double c=a/b;
+        System.out.println("Rezultatul impartirii:" + c);
 
         System.out.println("a."+ (-5 + 8 * 6));
         System.out.println("b." + ((55+9) % 9));
