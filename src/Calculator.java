@@ -24,4 +24,11 @@ public class Calculator {
         double result = first % second;
         return result;
     }
+
+    public static double media(int first, double second, double third){
+        double result = (first * second * third)/3;
+        return result;
+    }
+
+
 }

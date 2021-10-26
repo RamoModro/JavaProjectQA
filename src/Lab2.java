@@ -1,6 +1,7 @@
 public class Lab2 {
     public static int x = 2;
     public static int y = 3;
+    public static int z = 5;
 
     public static void main(String[] args) {
         Calculator calc = new Calculator();
@@ -18,8 +19,12 @@ public class Lab2 {
         //System.out.println(moduloresult);
 
         System.out.println("Hello \nRamona");
-        printing.printJava()
-;    }
+        printing.printJava();
+
+        double mediaresult = calc.media(x,y,z);
+        System.out.println(mediaresult);
+
+    }
 
 
 
