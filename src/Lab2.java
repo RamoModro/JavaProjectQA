@@ -4,7 +4,7 @@ public class Lab2 {
 
     public static void main(String[] args) {
         Calculator calc = new Calculator();
-        Print printMyName = new Print();
+        Print printing = new Print();
 
         double sumresult = calc.sum(x,y);
         double substractresult = calc.substraction(x,y);
@@ -18,6 +18,7 @@ public class Lab2 {
         //System.out.println(moduloresult);
 
         System.out.println("Hello \nRamona");
+        printing.printJava()
 ;    }
 
 
