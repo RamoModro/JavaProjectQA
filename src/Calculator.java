@@ -1,26 +1,26 @@
 public class Calculator {
 
-    public static double sum(int first, double second){
+    public double sum(int first, double second){
         double result = first+second;
         return result;
     }
 
-    public static double substraction(int first, double second){
+    public double substraction(int first, double second){
         double result = first - second;
         return result;
     }
 
-    public static double multiply(int first, double second){
+    public double multiply(int first, double second){
         double result = first * second;
         return result;
     }
 
-    public static double divide(int first, double second){
+    public double divide(int first, double second){
         double result = first / second;
         return result;
     }
 
-    public static double modulo(int first, double second){
+    public double modulo(int first, double second){
         double result = first % second;
         return result;
     }
@@ -30,5 +30,9 @@ public class Calculator {
         return result;
     }
 
+    public static int celsiusTemp(int F){
+        int celsiusTemp = (F-32) * 5/9;
+        return celsiusTemp;
+    }
 
 }

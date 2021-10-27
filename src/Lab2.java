@@ -2,6 +2,7 @@ public class Lab2 {
     public static int x = 2;
     public static int y = 3;
     public static int z = 5;
+    public static int F = 100;
 
     public static void main(String[] args) {
         Calculator calc = new Calculator();
@@ -27,6 +28,10 @@ public class Lab2 {
         printing.printFaceModel();
 
         System.out.println("Restul impartirii este:" + moduloresult);
+
+        int celsiusTemp = calc.celsiusTemp(F);
+        System.out.println("Temperatura in grade C este:" + celsiusTemp);
+
 
         }
 
