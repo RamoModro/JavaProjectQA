@@ -16,16 +16,17 @@ public class Lab2 {
         //System.out.println(substractresult);
        // System.out.println(multiplyresult);
         //System.out.println(divisionresult);
-        //System.out.println(moduloresult);
 
         printing.printMyName();
 
         printing.printJava();
 
         double mediaresult = calc.media(x,y,z);
-        System.out.println(mediaresult);
+        System.out.println("Media celor 3 numere este:" + mediaresult);
 
         printing.printFaceModel();
+
+        System.out.println("Restul impartirii este:" + moduloresult);
 
         }
 
