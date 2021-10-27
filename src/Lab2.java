@@ -25,6 +25,7 @@ public class Lab2 {
         double mediaresult = calc.media(x,y,z);
         System.out.println(mediaresult);
 
+        printing.printFaceModel();
 
         }
 

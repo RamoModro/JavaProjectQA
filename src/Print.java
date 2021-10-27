@@ -14,7 +14,14 @@ public class Print {
                 " JJ  a      a   V   a      a\n");
     }
 
-
+    public void printFaceModel() {
+        System.out.println("" +
+                  " +\"\"\"\"\"+\n" +
+                 "[| o o |]\n" +
+                  " |  ^  |\n"+
+                  " | \'_\' |\n"+
+                  " +-----+\n");
+    }
 
 
 
