@@ -18,14 +18,16 @@ public class Lab2 {
         //System.out.println(divisionresult);
         //System.out.println(moduloresult);
 
-        System.out.println("Hello \nRamona");
+        printing.printMyName();
+
         printing.printJava();
 
         double mediaresult = calc.media(x,y,z);
         System.out.println(mediaresult);
 
+
+        }
+
     }
 
 
-
-}
