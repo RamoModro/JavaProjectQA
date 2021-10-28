@@ -25,19 +25,25 @@ public class Calculator {
         return result;
     }
 
-    public static double media(int first, double second, double third){
+    public double media(int first, double second, double third){
         double result = (first * second * third)/3;
         return result;
     }
 
-    public static int celsiusTemp(int F){
+    public int celsiusTemp(int F){
         int celsiusTemp = (F-32) * 5/9;
         return celsiusTemp;
     }
 
-    public static double distance(int inch){
+    public double distance(int inch){
         double distMeters = inch/39.370;
         return distMeters;
     }
+
+    public double viteza(double dist, double time){
+        double speed = dist/time;
+        return speed;
+    }
+
 
 }

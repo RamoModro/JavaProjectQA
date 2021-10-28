@@ -4,6 +4,8 @@ public class Lab2 {
     public static int z = 5;
     public static int F = 100 ;
     public static int inch = 1350;
+    public static double d = 1609;
+    public static double t = 3600;
 
     public static void main(String[] args) {
         Calculator calc = new Calculator();
@@ -25,18 +27,23 @@ public class Lab2 {
         printing.printJava();
 
         double mediaresult = calc.media(x,y,z);
-        System.out.println("Media celor 3 numere este:" + mediaresult);
+        System.out.println("Media = " + mediaresult);
 
         printing.printFaceModel();
 
-        System.out.println("Restul impartirii este:" + moduloresult);
+        System.out.println("Restul impartirii = " + moduloresult);
 
         int celsiusTemp = calc.celsiusTemp(F);
         System.out.println("Temperatura in grade C este:" + celsiusTemp);
 
         double distMeters = calc.distance(inch);
-        System.out.println("Distanta in metri este:" + distMeters);
+        System.out.println("Distanta = " + distMeters);
+
+        double speed = calc.viteza(d,t);
+        System.out.println("Viteza = " + speed + "m/s");
         }
+
+
 
     }
 
