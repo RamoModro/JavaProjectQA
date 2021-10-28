@@ -40,10 +40,7 @@ public class Calculator {
         return distMeters;
     }
 
-    public double viteza(double dist, double time){
-        double speed = dist/time;
-        return speed;
+
     }
 
 
-}

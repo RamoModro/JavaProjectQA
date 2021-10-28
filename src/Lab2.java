@@ -4,8 +4,6 @@ public class Lab2 {
     public static int z = 5;
     public static int F = 100 ;
     public static int inch = 1350;
-    public static double d = 1609;
-    public static double t = 3600;
 
     public static void main(String[] args) {
         Calculator calc = new Calculator();
@@ -39,8 +37,19 @@ public class Lab2 {
         double distMeters = calc.distance(inch);
         System.out.println("Distanta = " + distMeters);
 
-        double speed = calc.viteza(d,t);
-        System.out.println("Viteza = " + speed + "m/s");
+        float timpSecunde;
+        float mps,kmph,mlph;
+        float ora = 1;
+        float minut = 58;
+        float secunda = 35;
+        float distanta = 2345;
+        timpSecunde = (ora*3600) + (minut*60) + secunda;
+        mps = distanta / timpSecunde;
+        kmph = (distanta/1000.0f) / (timpSecunde/3600.0f);
+        mlph = kmph / 1.609f;
+        System.out.println("Viteza in mps = " + mps);
+        System.out.println("Viteza in kmps = " + kmph);
+        System.out.println("Viteza in mlph = " + mlph);
         }
 
 
