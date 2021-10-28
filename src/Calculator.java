@@ -35,4 +35,9 @@ public class Calculator {
         return celsiusTemp;
     }
 
+    public static double distance(int inch){
+        double distMeters = inch/39.370;
+        return distMeters;
+    }
+
 }
