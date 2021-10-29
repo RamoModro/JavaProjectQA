@@ -22,7 +22,7 @@ public class Lab2 {
        // System.out.println(multiplyresult);
         //System.out.println(divisionresult);
 
-        printing.printMyName();
+        printing.printMyName("Ramona");
 
         printing.printJava();
 
@@ -40,6 +40,8 @@ public class Lab2 {
         System.out.println("Distanta = " + distMeters);
 
         viteza.mps();
+
+
 
         }
 

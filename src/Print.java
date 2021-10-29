@@ -1,9 +1,9 @@
 public class Print {
 
 
-    public void printMyName() {
+    public void printMyName(String nume) {
         System.out.println("Hello\n"+
-                "Ramona");
+                nume);
     }
 
     public void printJava() {
