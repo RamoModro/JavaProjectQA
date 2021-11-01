@@ -12,5 +12,8 @@ public class Lab3 {
         String text = "FastTrackit";
         System.out.println(op.printFastTrack(text));
 
+    //3.Given a number, if it’s equal to or higher than 2 and equal to or lower than 8, print the number
+        int number = 10;
+        op.printNumber(number);
     }
 }
