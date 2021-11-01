@@ -1,12 +1,12 @@
 public class Print {
 
 
-    public void printMyName(String nume) {
+        public void printMyName(String nume) {
         System.out.println("Hello\n"+
                 nume);
     }
 
-    public void printJava() {
+        public void printJava() {
         System.out.println("" +
                 "   J     a   v     v    a\n" +
                 "   J   a  a   v   v   a  a\n" +
@@ -14,16 +14,16 @@ public class Print {
                 " JJ  a      a   V   a      a\n");
     }
 
-    public void printFaceModel() {
-        System.out.println("" +
-                  " +\"\"\"\"\"+\n" +
-                 "[| o o |]\n" +
-                  " |  ^  |\n"+
-                  " | \'_\' |\n"+
-                  " +-----+\n");
-    }
+        public void printFaceModel() {
+            System.out.println("" +
+                    " +\"\"\"\"\"+\n" +
+                    "[| o o |]\n" +
+                    " |  ^  |\n" +
+                    " | \'_\' |\n" +
+                    " +-----+\n");
+        }
 
 
-    }
+            }
 
 
