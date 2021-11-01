@@ -16,7 +16,25 @@ public class LogicalOperation {
         } else {
             return ;
         }
+    }
+
+    public int checkBiggerNumber(int first, int second){
+        if (first>second){
+            return first;
+        }else{
+            return second;
+        }
+    }
+
+    public String textAndnumber(String text, int number){
+        if(text.equals("FastTrackIT") && number<=3){
+           return text + number;
+        }else if(!text.equals("FastTrackIT") && number >=4){
+            return number+text;
+        }else return "No result";
 
     }
+
+
 }
 
