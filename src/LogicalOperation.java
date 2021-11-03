@@ -9,32 +9,49 @@ public class LogicalOperation {
         return text;
     }
 
-    public void printNumber(int number) {
+    public int printNumber(int number) {
         if (number >= 2 && number <= 8) {
-            System.out.println(number);
-            ;
+            return number;
         } else {
-            return ;
+            return 0;
         }
     }
 
-    public int checkBiggerNumber(int first, int second){
-        if (first>second){
+    public int checkBiggerNumber(int first, int second) {
+        if (first > second) {
             return first;
-        }else{
+        } else {
             return second;
         }
     }
 
-    public String textAndnumber(String text, int number){
-        if(text.equals("FastTrackIT") && number<=3){
-           return text + number;
-        }else if(!text.equals("FastTrackIT") && number >=4){
-            return number+text;
-        }else return "No result";
-
+    public String textAndnumber(String text, int number) {
+        if (text.equals("FastTrackIT") && number <= 3) {
+            return text + number;
+        } else if (!text.equals("FastTrackIT") && number >= 4) {
+            return number + text;
+        } else return "No result";
     }
 
+    public String snowForecast(int y){
+        if(y>8 && y==6){
+            return "The amount of snow this winter was:" + y+ "cm";
+        }else return "The forecast snow is"+ y+ "cm";
+    }
 
+    public String howIsNumber(int x) {
+        if (x == 4) {
+            return "The number is equal to 4";
+        } else if (x < 3) {
+            return "The number is lower than 3";
+        } else if (x > 3 || x != 4) {
+            return "The number is greater than 3 and not equal to 4";
+        } else return null;
+    }
 }
+
+
+
+
+
 
