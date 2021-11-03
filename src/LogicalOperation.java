@@ -33,11 +33,11 @@ public class LogicalOperation {
         } else return "No result";
     }
 
-    public String snowForecast(int y){
-        if(y>8 && y==6){
-            return "The amount of snow this winter was:" + y+ "cm";
-        }else return "The forecast snow is"+ y+ "cm";
-    }
+    public String snowForecast(int y) {
+        if (y > 8 || y==6) {
+            return "The amount of snow this winter was:" + y + "cm";
+        } else return "The forecast snow is" + y + "cm";
+        }
 
     public String howIsNumber(int x) {
         if (x == 4) {
