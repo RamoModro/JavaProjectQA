@@ -31,7 +31,7 @@ public class Lab3 {
 //  6. Creati o metoda de tip String, care sa primeasca un parametru de tip int. Daca numarul primit este mai mare de 8,
 //  SAU egal cu 6, atunci sa se returneze “The amount of snow this winter was(cm): “ si numarul. Daca nu, sa printeze
 //  “The forecast snow is(cm):” si numarul. Apelati metoda in main() pentru a verifica daca functioneaza.
-        System.out.println(op.snowForecast(2));
+        //System.out.println(op.snowForecast(2));
 
 //  7.Creati o metoda de tip String, care sa primeasca un parametru de tip numar.
 //  Daca numarul e mai mare decat 3, SI nu egal cu 4, returnati “The number is greater than 3 and not equal to 4”.
@@ -39,6 +39,15 @@ public class Lab3 {
 //  “The number is lower than 3”.
         //System.out.println(op.howIsNumber(8));
 
+//  8. Creati o metoda care primeste un numar ca si parametru si sa afiseze ce numar a primit. Folosind constructia
+//  Switch-Case, verificati ce numar s-a primit si afisati textul "The number is:  x !" unde x trebuie sa reprezinte
+//  numarul apasat. Pentru exemplul de fata sa nu se foloseasca concatenarea stringului "The number is:" cu numarul
+//  de la parametru, ci sa se scrie intreg textul cu tot cu numar pentru fiecare caz din Switch-Case.
+
+
+//  9. Creati o metoda care sa se numeasca isNumberEven. Metoda trebuie sa primeasca ca parametru un numar,
+//  si sa returneze adevarat sau fals. Daca numarul e par sa returneze true iar daca e impar sa returnese false.
+        System.out.println(op.isNumberEven(5434565));
 
     }
 

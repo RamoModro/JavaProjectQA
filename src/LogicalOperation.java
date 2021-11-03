@@ -34,10 +34,10 @@ public class LogicalOperation {
     }
 
     public String snowForecast(int y) {
-        if (y > 8 || y==6) {
+        if (y > 8 || y == 6) {
             return "The amount of snow this winter was:" + y + "cm";
         } else return "The forecast snow is" + y + "cm";
-        }
+    }
 
     public String howIsNumber(int x) {
         if (x == 4) {
@@ -48,7 +48,31 @@ public class LogicalOperation {
             return "The number is greater than 3 and not equal to 4";
         } else return null;
     }
-}
+
+
+        int number = 2; {
+        switch (number) {
+            case 1:
+                System.out.println("The number is: 1 !");
+                break;
+            case 2:
+                System.out.println("The number is: 2 !");
+                break;
+            case 3:
+                System.out.println("The number is: 3!");
+                break;
+        }
+    }
+
+
+    public boolean isNumberEven(int z) {
+        if (z % 2 == 0) {
+            return true;
+        } else if (z % 2 != 0) {
+
+        }
+        return false;
+    }}
 
 
 
