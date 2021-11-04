@@ -47,7 +47,17 @@ public class Lab3 {
 
 //  9. Creati o metoda care sa se numeasca isNumberEven. Metoda trebuie sa primeasca ca parametru un numar,
 //  si sa returneze adevarat sau fals. Daca numarul e par sa returneze true iar daca e impar sa returnese false.
-        System.out.println(op.isNumberEven(5434565));
+        //System.out.println(op.isNumberEven(5434565));
+
+
+//  10.Creati o metoda care sa se numeasca isEligibleToVote. Metoda sa primeasca ca si parametru un numar, care
+//  sa reprezinte varsta, iar metoda sa iti zica daca daca persoana are drept de vot. Daca varsta e peste 18,
+//  sa se returneze true iar daca nu, sa returneze false.
+        System.out.println(op.isEligibleToVote(16));
+
+//  11. Creati o metoda care sa primeasca 3 numere ca si parametrii si sa returneze cel mai mare numar.
+        System.out.println(op.returnBiggestNo(22,45,13));
+
 
     }
 

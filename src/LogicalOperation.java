@@ -72,7 +72,28 @@ public class LogicalOperation {
 
         }
         return false;
-    }}
+    }
+
+    public boolean isEligibleToVote(int age) {
+        if (age>18){
+            return true;
+        }else
+        return false;
+    }
+
+    public int returnBiggestNo(int a, int b, int c) {
+        if (a > b && a > c) {
+            return a;
+        }else if(b>c){
+            return b;
+        }else
+        return c;
+    }
+}
+
+
+
+
 
 
 
