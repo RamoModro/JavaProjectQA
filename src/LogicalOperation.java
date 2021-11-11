@@ -1,12 +1,11 @@
 public class LogicalOperation {
 
-    public String printFastTrack(String text) {
-        if (text.equals("FastTrack")) {
+    public String checkText(String text) {
+        if (text.equals("FastTrackIT")) {
             return ("Learning text comparison");
-        } else if (!text.equals("FastTrack")) {
+        } else {
             return ("Got to try some more");
         }
-        return text;
     }
 
     public int printNumber(int number) {
@@ -25,71 +24,237 @@ public class LogicalOperation {
         }
     }
 
-    public String textAndnumber(String text, int number) {
+    public String textNumber(String text, int number) {
         if (text.equals("FastTrackIT") && number <= 3) {
             return text + number;
         } else if (!text.equals("FastTrackIT") && number >= 4) {
             return number + text;
-        } else return "No result";
+        } else {
+            return "No result";
+        }
     }
 
     public String snowForecast(int y) {
         if (y > 8 || y == 6) {
             return "The amount of snow this winter was:" + y + "cm";
-        } else return "The forecast snow is" + y + "cm";
-    }
-
-    public String howIsNumber(int x) {
-        if (x == 4) {
-            return "The number is equal to 4";
-        } else if (x < 3) {
-            return "The number is lower than 3";
-        } else if (x > 3 || x != 4) {
-            return "The number is greater than 3 and not equal to 4";
-        } else return null;
-    }
-
-
-        int number = 2; {
-        switch (number) {
-            case 1:
-                System.out.println("The number is: 1 !");
-                break;
-            case 2:
-                System.out.println("The number is: 2 !");
-                break;
-            case 3:
-                System.out.println("The number is: 3!");
-                break;
+        } else {
+            return "The forecast snow is" + y + "cm";
         }
     }
 
+    public String howIsNumber(int x) {
+        if (x > 3 && x != 4) {
+            return "The number is greater than 3 and not equal to 4";
+        } else if (x == 4) {
+            return "The number is equal to 4";
+        } else if (x < 3) {
+            return "The number is lower than 3";
+        }
+        return null;
+    }
+
+    public void printNum(int number) {
+
+        switch (number) {
+
+            case 0:
+
+                System.out.println("The number is 0");
+
+                break;
+
+            case 1:
+
+                System.out.println("The number is 1");
+
+                break;
+
+            case 2:
+
+                System.out.println("The number is 2");
+
+                break;
+
+            case 3:
+
+                System.out.println("The number is 3");
+
+                break;
+
+            case 4:
+
+                System.out.println("The number is 4");
+
+                break;
+
+            case 5:
+
+                System.out.println("The number is 5");
+
+                break;
+
+            case 6:
+
+                System.out.println("The number is 6");
+
+                break;
+
+            case 7:
+
+                System.out.println("The number is 7");
+
+                break;
+
+            case 8:
+
+                System.out.println("The number is 8");
+
+                break;
+
+            case 9:
+
+                System.out.println("The number is 9");
+
+                break;
+
+            default:
+
+                System.out.println("Not allowed");
+
+        }
+    }
 
     public boolean isNumberEven(int z) {
         if (z % 2 == 0) {
             return true;
-        } else if (z % 2 != 0) {
-
+        } else {
+            return false;
         }
-        return false;
     }
 
     public boolean isEligibleToVote(int age) {
-        if (age>18){
+        if (age >= 18) {
             return true;
-        }else
-        return false;
+        } else {
+            return false;
+        }
     }
 
     public int returnBiggestNo(int a, int b, int c) {
         if (a > b && a > c) {
             return a;
-        }else if(b>c){
+        } else if (b > c) {
             return b;
-        }else
-        return c;
+        } else
+            return c;
     }
+
+    public void countBackwards(int small, int big) {
+        for (int i = big; i >= small; i--) {
+            System.out.println(i);
+        }
+    }
+
+    public float getAverageFromInterval(int start, int max) {
+        float sum = 0;
+        for (int i = start; i <= max; i++) {
+            sum = i + sum;
+        }
+        return sum / (max - start + 1);
+    }
+
+    public float getAverageDivisibleBySeven(int start, int max) {
+        int x = start;
+        float sum = 0;
+        int count = 0;
+        while (x <= max) {
+            if (x % 7 == 0) {
+                sum += x; //  sum = sum + x;
+                count++;
+            }
+
+            x++;
+        }
+        return sum / count;
+    }
+
+
+    //tema lab4 For Loops
+
+    public void verifyNo(int number) {
+        for (int i = number; number <= 100; number++) {
+            System.out.println(number);
+        }
+    }
+
+    public void negativeNo(int no) {
+        for (int i = no; no > -101; no--) {
+            System.out.println(no);
+        }
+    }
+
+    public void countBetweenTwoNumbers(int first, int second) {
+        for (int i = first; i <= second; i++) {
+            System.out.println(i);
+        }
+
+    }
+
+    public void countStartSmallestNo(int first, int second) {
+        for (int i = first; i <= second; i++) {
+            System.out.println(i);
+        }
+        for (int i = second; i <= first; i++) {
+            System.out.println(i);
+        }
+    }
+
+    public void getEvenNumbers(int start, int max) {
+        for (int x = start; x <= max; x++) {
+            if (x % 2 == 0) {
+                System.out.println(x);
+            }
+        }
+    }
+
+    public void getUnevenNumbers(int start, int end){
+        for(int i = start; i<=end; i++){
+            if(i%2!=0){
+                System.out.println(i);
+            }
+        }
+    }
+
+    public int sumToHundred(int start){
+        int sum = 0;
+        for(int i = start; i<=100; i++){
+            sum = i+ sum;
+        }
+        return sum;
+    }
+
+    public float getAverageToHundred(int set){
+        int sum = 0;
+        for(int x=set; x<=100; x++){
+            sum = x+sum;
+        }
+        return sum/(101-set);
+    }
+
+    public void printStars(int star){
+        for(int x = 1;x<=star; x++){
+        for(int y=star;y>=x;y--){
+            System.out.print("*");
+        }
+            System.out.println();
+        }
+    }
+
 }
+
+
+
+
 
 
 

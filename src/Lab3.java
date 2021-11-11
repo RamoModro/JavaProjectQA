@@ -37,12 +37,13 @@ public class Lab3 {
 //  Daca numarul e mai mare decat 3, SI nu egal cu 4, returnati “The number is greater than 3 and not equal to 4”.
 //  Daca numarul este egal cu 4, returnati “The number is equal to 4”, iar daca numarul este mai mic de 3 returnati
 //  “The number is lower than 3”.
-        //System.out.println(op.howIsNumber(8));
+        //System.out.println(op.howIsNumber(4));
 
 //  8. Creati o metoda care primeste un numar ca si parametru si sa afiseze ce numar a primit. Folosind constructia
 //  Switch-Case, verificati ce numar s-a primit si afisati textul "The number is:  x !" unde x trebuie sa reprezinte
 //  numarul apasat. Pentru exemplul de fata sa nu se foloseasca concatenarea stringului "The number is:" cu numarul
 //  de la parametru, ci sa se scrie intreg textul cu tot cu numar pentru fiecare caz din Switch-Case.
+        //op.printNum(8);
 
 
 //  9. Creati o metoda care sa se numeasca isNumberEven. Metoda trebuie sa primeasca ca parametru un numar,

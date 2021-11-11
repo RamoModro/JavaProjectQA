@@ -11,15 +11,31 @@ public class AppMain {
         Rescuer human = new Rescuer();
         Veterinary vet = new Veterinary();
 
-        dog.name = "Bazil";
-        dog.age = 3;
-        dog.health = 10;
-        dog.hunger = 5;
-        dog.mood = 7;
-        dog.favFood = "Meatballs";
-        dog.favRelax = "Playing fetch";
-        System.out.println(dog.name);
-        System.out.println(dog.age);
+        dog.setName("Toto");
+        String name = dog.getName();
+
+        dog.setAge((byte) 4);
+
+        dog.setHealth((byte) 10);
+        dog.getHealth();
+
+        dog.setHunger((byte) 6);
+        dog.getHunger();
+
+        dog.setMood((byte) 9);
+        dog.getMood();
+
+        dog.setFavFood("Meatballs");
+        dog.getFavFood();
+
+        dog.setFavRelax("Playing fetch");
+        dog.getFavRelax();
+
+        System.out.println(dog.getName());
+        System.out.println(dog.getAge());
+        System.out.println(dog.getHealth());
+        System.out.println(dog.getFavRelax());
+        System.out.println(dog.getMood());
         dog.play();
 
         food.name = "meatballs";
