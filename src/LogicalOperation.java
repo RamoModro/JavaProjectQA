@@ -179,7 +179,7 @@ public class LogicalOperation {
     }
 
 
-    //tema lab4 For Loops
+    //tema lab12 For Loops
 
     public void verifyNo(int number) {
         for (int i = number; number <= 100; number++) {
@@ -217,40 +217,156 @@ public class LogicalOperation {
         }
     }
 
-    public void getUnevenNumbers(int start, int end){
-        for(int i = start; i<=end; i++){
-            if(i%2!=0){
+    public void getUnevenNumbers(int start, int end) {
+        for (int i = start; i <= end; i++) {
+            if (i % 2 != 0) {
                 System.out.println(i);
             }
         }
     }
 
-    public int sumToHundred(int start){
+    public int sumToHundred(int start) {
         int sum = 0;
-        for(int i = start; i<=100; i++){
-            sum = i+ sum;
+        for (int i = start; i <= 100; i++) {
+            sum = i + sum;
         }
         return sum;
     }
 
-    public float getAverageToHundred(int set){
+    public float getAverageToHundred(int set) {
         int sum = 0;
-        for(int x=set; x<=100; x++){
-            sum = x+sum;
+        for (int x = set; x <= 100; x++) {
+            sum = x + sum;
         }
-        return sum/(101-set);
+        return sum / (101 - set);
     }
 
-    public void printStars(int star){
-        for(int x = 1;x<=star; x++){
-        for(int y=star;y>=x;y--){
-            System.out.print("*");
-        }
+    public void printStars(int star) {
+        for (int x = 1; x <= star; x++) {
+            for (int y = star; y >= x; y--) {
+                System.out.print("*");
+            }
             System.out.println();
         }
     }
 
+
+    //tema lab12 While Loop
+
+    public void countToHundred(int number) {
+        while (number <= 100) {
+            System.out.println(number);
+            number++;
+        }
+    }
+
+    public void countToMinusHundred(int nr) {
+        while (nr >= -100) {
+            System.out.println(nr);
+            nr--;
+        }
+    }
+
+    public void countFrstToScnd(int x, int y) {
+        while (x <= y) {
+            System.out.println(x);
+            x++;
+        }
+        while (x >= y) {
+            System.out.println(x);
+            x--;
+        }
+    }
+
+    public void countMinMax(int a, int b) {
+        while (a <= b) {
+            System.out.println(a);
+            a++;
+        }
+        while (a >= b) {
+            System.out.println(b);
+            b++;
+        }
+    }
+
+    public void evenNum(int x, int y) {
+        while (x <= y) {
+            System.out.println(x * 2);
+            x++;
+        }
+    }
+
+    public void unevenNum(int x, int y) {
+        while (x <= y) {
+            System.out.println(x);
+            x += 2;
+        }
+    }
+
+    public float getSumAndAverage(int start, int max) {
+        int sum = 0;
+        float count = 0;
+        while (start <= max) {
+            sum += start; //  sum = sum + start;
+            start++;
+            count++;
+        }
+        return sum / count;
+    }
+
+    public void moduloSeven(int first, int second) {
+        while (first <= second) {
+            if (first % 7 == 0)
+                System.out.println(first);
+            first++;
+        }
+    }
+
+    public void fibonacciSeries(int count) {
+        int n1 = 0, n2 = 1, n3;
+        int i = 0;
+        while (i < count) {
+            n3 = n1 + n2;
+            System.out.println(("" + n3));
+            ++i;
+            n1 = n2;
+            n2 = n3;
+        }
+    }
+
+
+    public void cozaLozaWoza(int i) {
+        while (i <= 110) {
+            boolean test = false;
+            if (i % 3 == 0) {
+                System.out.print("Coza");
+                test = true;
+            }
+            if (i % 5 == 0) {
+                System.out.print("Loza");
+                test = true;
+            }
+            if (i % 7 == 0) {
+                System.out.print("Woza");
+                test = true;
+            }
+            if (!test) {
+                System.out.print(i);
+            }
+            System.out.print(" ");
+            if (i % 11 == 0) {
+                System.out.println();
+            }
+            i++;
+        }
+    }
 }
+
+
+
+
+
+
 
 
 
