@@ -12,9 +12,10 @@ public class AppMain {
         Veterinary vet = new Veterinary();
 
         dog.setName("Toto");
-        String name = dog.getName();
+        dog.getName();
 
         dog.setAge((byte) 4);
+        dog.getAge();
 
         dog.setHealth((byte) 10);
         dog.getHealth();
@@ -31,32 +32,60 @@ public class AppMain {
         dog.setFavRelax("Playing fetch");
         dog.getFavRelax();
 
-        System.out.println(dog.getName());
-        System.out.println(dog.getAge());
-        System.out.println(dog.getHealth());
-        System.out.println(dog.getFavRelax());
-        System.out.println(dog.getMood());
-        dog.play();
+        System.out.println("Dog name is:"+dog.getName());
+        System.out.println("Dog age is:"+dog.getAge());
+        System.out.println("Dog health is:"+dog.getHealth());
+        System.out.println("Dog favourite activity is:"+dog.getFavRelax());
+        System.out.println("Dog favourite food is:"+dog.getFavFood());
+        System.out.println("Dog mood is:"+dog.getMood());
+        //dog.play();
 
-        food.name = "meatballs";
-        food.quantity = 400;
-        food.availability = "Available";
-        food.price = 15;
-        System.out.println(food.name);
-        System.out.println(food.quantity + "gr");
+        food.setName("Biscuit");
+        food.getName();
 
-        rlx.name = "Running";
-        System.out.println(rlx.name);
+        food.setPrice(10);
+        food.getPrice();
 
-        human.gender = "M";
-        human.age = 30;
-        human.money = 500;
-        System.out.println(human.money+ "Euro");
+        food.setQuantity(1);
+        food.getQuantity();
 
-        vet.name = "Alec";
-        vet.specialization = "Dermathology";
-        System.out.println(vet.name);
-        System.out.println(vet.specialization);
+        food.setAvailability("Available");
+        food.getAvailability();
+
+        System.out.println("Available food:"+food.getName());
+        System.out.println("Food price is:"+food.getPrice()+"ron");
+        System.out.println("Food quantity:"+food.getQuantity());
+        System.out.println("Food is:"+food.getAvailability());
+
+        rlx.setName("chasing cats");
+        rlx.getName();
+
+        System.out.println(dog.getName()+" "+"likes"+" "+rlx.getName());
+
+        human.setName("Andy");
+        human.getName();
+
+        human.setGender("M");
+        human.getGender();
+
+        human.setAge((byte) 18);
+        human.getAge();
+
+        human.setMoney(1000);
+        human.getMoney();
+
+        System.out.println(dog.getName()+" "+"s rescuer name is:"+" "+human.getName());
+        System.out.println(human.getName()+" "+"age is:"+human.getAge());
+        System.out.println(human.getName()+" "+"has"+" "+human.getMoney()+" "+"ron"+" "+"to buy a pet");
+
+        vet.setName("Denis");
+        vet.getName();
+
+        vet.setSpecialization("Dermathology");
+        vet.getSpecialization();
+
+        System.out.println("Veterinary name is:"+vet.getName());
+        System.out.println("Veterinary specialization is:"+vet.getSpecialization());
 
     }
 }

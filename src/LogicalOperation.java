@@ -334,7 +334,6 @@ public class LogicalOperation {
         }
     }
 
-
     public void cozaLozaWoza(int i) {
         while (i <= 110) {
             boolean test = false;

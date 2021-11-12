@@ -54,7 +54,7 @@ public class Pet {
     }
 
     public void setFavFood(String food){
-        this.favFood = favFood;
+        this.favFood = food;
     }
 
     public String getFavRelax(){
