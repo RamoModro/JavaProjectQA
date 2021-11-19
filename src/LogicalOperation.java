@@ -359,7 +359,102 @@ public class LogicalOperation {
             i++;
         }
     }
-}
+
+
+    public int[] populateArray(int max) {
+        int[] myArr = new int[max];
+        for (int i = 0; i < max; i++) {
+            myArr[i] = i + 1;
+        }
+        return myArr;
+    }
+
+    public void printArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+    }
+
+    public float getAverageValueFromArray(int[] array) {
+        float sum = 0;
+
+        for (int i = 0; i < array.length; i++) {
+            sum = sum + array[i];
+        }
+        return (sum / array.length);
+    }
+
+    public boolean isWordInArray(String[] sir, String word) {
+        for (int i = 0; i < sir.length; i++) {
+            if (sir[i] == word) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void getEvenNrArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 0) {
+                System.out.print(array[i] + " ");
+            }
+        }
+    }
+
+    public void getNumberPositionInArray(int[] array, int number) {
+        int index = 0;
+        for (int i = 0; (i < array.length) && (index == 0); i++) {
+            if (array[i] == number) {
+                index = i;
+            }
+        }
+        System.out.println(index);
+    }
+
+    public void printPattern(String[] arraySir) {
+        for (int i = 0; i < arraySir.length; i++) {
+            System.out.println(arraySir[i]);
+        }
+    }
+
+    public void skipNumber(int[] arr1, int number) {
+        for (int i = 0; i < arr1.length; i++) {
+            if (arr1[i] != number) {
+                System.out.print(arr1[i] + " ");
+            }
+        }
+    }
+
+    public int getSecondSmallest(int[] arr, int number) {
+        int min;
+        for (int i = 0; i < number; i++) {
+            for (int j = i + 1; j < number; j++) {
+                if (arr[i] > arr[j]) {
+                    min = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = min;
+                }
+            }
+        }
+        return arr[1];
+    }
+
+    public void copyArray(int[]arr2, int[]arr3) {
+        for (int i = 0; i < arr2.length; i++) {
+            arr3[i] = arr2[i];
+        }
+        for (int i = 0; i < arr2.length; i++) {
+            System.out.print(arr2[i] + " ");
+        }
+        System.out.println();
+
+        for (int i = 0; i < arr3.length; i++) {
+            System.out.print(arr3[i] + " ");
+        }
+
+    }}
+
+
 
 
 

@@ -1,8 +1,24 @@
-public class Calculator {
+public class Calculator{
 
-    public double sum(int first, double second){
-        double result = first+second;
+
+    public int sum(int first, int second){
+        int result = first+second;
         return result;
+    }
+
+    public float sum(float first, float second){
+        float result = first+second;
+        return result;
+    }
+
+    public float sum(float first, float second, float third){
+        float result = first+second+third;
+        return  result;
+    }
+
+    public int sum(int a, int b, int c, int d){
+        int result = a+b+c+d;
+        return  result;
     }
 
     public double substraction(int first, double second){
@@ -39,7 +55,6 @@ public class Calculator {
         double distMeters = inch/39.370;
         return distMeters;
     }
-
 
     }
 
