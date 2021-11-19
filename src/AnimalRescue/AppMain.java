@@ -5,8 +5,10 @@ public class AppMain {
 
     public static void main(String[] args) {
 
-        Pet dog = new Pet();
-        PetFood food = new PetFood();
+        Animal dog = new Animal();
+        Cat cat1= new Cat();
+        Dog dog1 = new Dog();
+        Food food = new Food();
         RelaxActivity rlx = new RelaxActivity();
         Rescuer human = new Rescuer();
         Veterinary vet = new Veterinary();
@@ -31,6 +33,15 @@ public class AppMain {
 
         dog.setFavRelax("Playing fetch");
         dog.getFavRelax();
+
+
+
+        cat1.setName("Tina");
+        cat1.getName();
+        System.out.println("Cat name is:"+cat1.getName());
+        cat1.purr();
+        dog1.wavingTail();
+
 
         System.out.println("Dog name is:"+dog.getName());
         System.out.println("Dog age is:"+dog.getAge());

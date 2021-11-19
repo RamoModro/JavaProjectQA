@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class Pet {
+public class Animal {
     private byte age;
    private String name;
    private byte health;
