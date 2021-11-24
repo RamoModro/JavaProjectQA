@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class Human {
+public abstract class Human {
 
     private String name;
     private String gender;
@@ -28,7 +28,5 @@ public class Human {
         this.age = age;
     }
 
-    public void caresForAnimals(){
-        System.out.println("Pet the animal");
-    }
+    public abstract void caresForAnimals();
 }

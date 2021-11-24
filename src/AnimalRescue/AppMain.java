@@ -5,37 +5,38 @@ public class AppMain {
 
     public static void main(String[] args) {
 
-        Animal dog = new Animal();
-        Cat cat1= new Cat();
-        Dog dog1 = new Dog();
+        BritishShorthair cat1= new BritishShorthair();
         Food food = new Food();
         RelaxActivity rlx = new RelaxActivity();
-        Rescuer human = new Rescuer();
-        Veterinary vet = new Veterinary();
-        Bulldog englishBulldog = new Bulldog();
+        Veterinary vet1 = new Veterinary();
+        Bulldog dog1 = new Bulldog();
         Girl girl1 = new Girl();
+        Boy boy1 = new Boy();
 
 
-        //dog.setName("Toto");
-        //dog.getName();
+        girl1.caresForAnimals();
+        cat1.play();
 
-        //dog.setAge((byte) 4);
-        //dog.getAge();
+        dog1.setName("Toto");
+        dog1.getName();
 
-        //dog.setHealth((byte) 10);
-        //dog.getHealth();
+        dog1.setAge((byte) 4);
+        dog1.getAge();
 
-        //dog.setHunger((byte) 6);
-        //dog.getHunger();
+        dog1.setHealth((byte) 10);
+        dog1.getHealth();
 
-        //dog.setMood((byte) 9);
-       // dog.getMood();
+        dog1.setHunger((byte) 6);
+        dog1.getHunger();
 
-        //dog.setFavFood("Meatballs");
-       // dog.getFavFood();
+        dog1.setMood((byte) 9);
+        dog1.getMood();
 
-        //dog.setFavRelax("Playing fetch");
-        //dog.getFavRelax();
+        dog1.setFavFood("Meatballs");
+        dog1.getFavFood();
+
+        dog1.setFavRelax("Playing fetch");
+        dog1.getFavRelax();
 
 
 
@@ -45,17 +46,17 @@ public class AppMain {
         cat1.purr();
         dog1.wavingTail();
         cat1.speak();
-        vet.caresForAnimals();
+        vet1.caresForAnimals();
 
 
 
-        //System.out.println("Dog name is:"+dog.getName());
-       // System.out.println("Dog age is:"+dog.getAge());
-       // System.out.println("Dog health is:"+dog.getHealth());
-        //System.out.println("Dog favourite activity is:"+dog.getFavRelax());
-       // System.out.println("Dog favourite food is:"+dog.getFavFood());
-        //System.out.println("Dog mood is:"+dog.getMood());
-        dog.play();
+        System.out.println("Dog name is:"+dog1.getName());
+        System.out.println("Dog age is:"+dog1.getAge());
+        System.out.println("Dog health is:"+dog1.getHealth());
+        System.out.println("Dog favourite activity is:"+dog1.getFavRelax());
+        System.out.println("Dog favourite food is:"+dog1.getFavFood());
+        System.out.println("Dog mood is:"+dog1.getMood());
+        dog1.play();
 
         //food.setName("Biscuit");
         //food.getName();
@@ -99,7 +100,7 @@ public class AppMain {
        // vet.getName();
 
        // vet.setSpecialization("Dermathology");
-        vet.getSpecialization();
+        vet1.getSpecialization();
 
        // System.out.println("Veterinary name is:"+vet.getName());
        // System.out.println("Veterinary specialization is:"+vet.getSpecialization());
