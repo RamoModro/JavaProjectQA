@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class LogicalOperation {
 
     public String checkText(String text) {
@@ -361,68 +364,105 @@ public class LogicalOperation {
     }
 
 
-    public int[] populateArray(int max) {
+
+
+    //Lab13 tema Array
+
+    public int[] populateArray(int max){
         int[] myArr = new int[max];
-        for (int i = 0; i < max; i++) {
-            myArr[i] = i + 1;
+        for (int i = 0; i < max; i++){
+            myArr[i] = i+1;
         }
         return myArr;
     }
 
-    public void printArray(int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " ");
+    public int[] getArrayToHundred() {
+
+        int[] myArray = new int[100];
+
+
+
+        for (int i = 1; i <= 100; i++) {
+
+            myArray[i - 1] = i;
+
+            System.out.println(myArray[i-1]);
+
         }
+
+        return myArray;
+
     }
 
     public float getAverageValueFromArray(int[] array) {
         float sum = 0;
-
         for (int i = 0; i < array.length; i++) {
             sum = sum + array[i];
         }
         return (sum / array.length);
     }
 
-    public boolean isWordInArray(String[] sir, String word) {
-        for (int i = 0; i < sir.length; i++) {
-            if (sir[i] == word) {
+    public boolean isWordInArray(String[] arrString,String word) {
+        for (int i = 0; i < arrString.length; i++) {
+            if (arrString[i].equals(word)) {
                 return true;
             }
         }
         return false;
     }
 
-    public void getEvenNrArray(int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 == 0) {
-                System.out.print(array[i] + " ");
+    public int[] getEvenArrayToHundred(int[] evenArray) {
+        int j = 0;
+        for (int i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                evenArray[j] = i;
+                j++;
             }
         }
-    }
+        return evenArray;
+        }
 
-    public void getNumberPositionInArray(int[] array, int number) {
-        int index = 0;
-        for (int i = 0; (i < array.length) && (index == 0); i++) {
+
+    public int getNumberPositionInArray(int[] array, int number) {
+        for (int i = 0; i < array.length;i++) {
             if (array[i] == number) {
-                index = i;
+               return i;
             }
         }
-        System.out.println(index);
+        return 0;
     }
 
-    public void printPattern(String[] arraySir) {
-        for (int i = 0; i < arraySir.length; i++) {
-            System.out.println(arraySir[i]);
+    public void printPattern() {
+        char[] line={'-','-','-','-','-','-','-','-','-','-'};
+        for (int i = 0; i <=10; i++) {
+            System.out.println(line);
         }
     }
 
-    public void skipNumber(int[] arr1, int number) {
-        for (int i = 0; i < arr1.length; i++) {
-            if (arr1[i] != number) {
-                System.out.print(arr1[i] + " ");
-            }
+    public int[] removeNumber(int[] myArray, int nr) {
+        int[] secondArray = new int[myArray.length];
+
+        int j = 0;
+
+        for (int i = 0; i < myArray.length; i++) {
+
+            if (myArray[i] == nr)
+
+                continue;
+
+            secondArray[j++] = myArray[i];
+
         }
+
+        int[] finArray = new int[j];
+
+
+
+        for (int i = 0; i < j; i++)
+
+            finArray[i] = secondArray[i];
+
+        return finArray;
     }
 
     public int getSecondSmallest(int[] arr, int number) {
@@ -439,20 +479,40 @@ public class LogicalOperation {
         return arr[1];
     }
 
-    public void copyArray(int[]arr2, int[]arr3) {
-        for (int i = 0; i < arr2.length; i++) {
+    public int[] copyArray(int[]arr2, int[]arr3) {
+        for (int i = 0, j=0; i < arr2.length; i++) {
             arr3[i] = arr2[i];
+            j++;
         }
-        for (int i = 0; i < arr2.length; i++) {
-            System.out.print(arr2[i] + " ");
-        }
-        System.out.println();
-
-        for (int i = 0; i < arr3.length; i++) {
-            System.out.print(arr3[i] + " ");
+        return arr3;
         }
 
-    }}
+
+
+
+        //Lab 14 Lists
+
+        public List<Integer> getPopulatedList(int max){
+            List<Integer> myList = new ArrayList<>();
+            for (int i = 1; i <= max; i++){
+                myList.add(i);
+            }
+            return myList;
+        }
+
+        public void printListFromNumber(List<Integer> myList, int number){
+            for (int i = number; i <= myList.size(); i++){
+                System.out.println(myList.get(i-1));
+            }
+        }
+
+        public void printListFromEnd(List<Integer> myList){
+            for(int i = myList.size()-1; i>=0;i--){
+                System.out.println(myList.get(i));
+            }
+        }
+
+}
 
 
 
