@@ -12,4 +12,10 @@ public class Veterinary extends Human {
         public void setSpecialization(String specialization) {
                 this.specialization = specialization;
         }
+
+        @Override
+        public void caresForAnimals() {
+                super.caresForAnimals();
+                System.out.println("Treating animal at the cabinet");
+        }
 }

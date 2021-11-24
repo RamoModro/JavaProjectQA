@@ -28,5 +28,7 @@ public class Human {
         this.age = age;
     }
 
-
+    public void caresForAnimals(){
+        System.out.println("Pet the animal");
+    }
 }

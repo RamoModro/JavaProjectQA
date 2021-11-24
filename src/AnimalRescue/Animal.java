@@ -80,5 +80,9 @@ public class Animal {
         System.out.println("Playing...");
     }
 
+    public void speak(){
+        System.out.println("Noise");
+    }
+
 
 }

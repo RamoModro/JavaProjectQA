@@ -12,4 +12,9 @@ public class Rescuer extends Human {
         this.money = money;
     }
 
+    @Override
+    public void caresForAnimals() {
+        super.caresForAnimals();
+        System.out.println("Takes animal home");
+    }
 }
