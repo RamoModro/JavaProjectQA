@@ -3,7 +3,8 @@ package AnimalRescue;
 public class Boy extends Rescuer{
 
     @Override
-    public void caresForAnimals() {
+    public void caringAboutAnimals() {
         System.out.println("Playing out every day");
+
     }
 }

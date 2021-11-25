@@ -14,6 +14,6 @@ public abstract class Rescuer extends Human {
     }
 
     @Override
-    public abstract void caresForAnimals();
+    public abstract void caringAboutAnimals();
 
 }

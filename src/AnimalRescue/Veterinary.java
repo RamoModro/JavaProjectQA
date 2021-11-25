@@ -14,7 +14,7 @@ public class Veterinary extends Human {
         }
 
         @Override
-        public void caresForAnimals() {
-                System.out.println("Treating animal at the cabinet");
+        public void caringAboutAnimals() {
+                System.out.println("Consulting animal at the cabinet");
         }
 }

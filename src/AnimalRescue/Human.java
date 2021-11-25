@@ -28,5 +28,5 @@ public abstract class Human {
         this.age = age;
     }
 
-    public abstract void caresForAnimals();
+    public abstract void caringAboutAnimals();
 }

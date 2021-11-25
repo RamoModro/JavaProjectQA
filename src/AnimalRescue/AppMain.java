@@ -14,7 +14,7 @@ public class AppMain {
         Boy boy1 = new Boy();
 
 
-        girl1.caresForAnimals();
+        girl1.caringAboutAnimals();
         cat1.play();
 
         dog1.setName("Toto");
@@ -46,16 +46,16 @@ public class AppMain {
         cat1.purr();
         dog1.wavingTail();
         cat1.speak();
-        vet1.caresForAnimals();
+        vet1.caringAboutAnimals();
+        dog1.eat();
 
 
-
-        System.out.println("Dog name is:"+dog1.getName());
-        System.out.println("Dog age is:"+dog1.getAge());
-        System.out.println("Dog health is:"+dog1.getHealth());
-        System.out.println("Dog favourite activity is:"+dog1.getFavRelax());
-        System.out.println("Dog favourite food is:"+dog1.getFavFood());
-        System.out.println("Dog mood is:"+dog1.getMood());
+        //System.out.println("Dog name is:"+dog1.getName());
+        //System.out.println("Dog age is:"+dog1.getAge());
+        //System.out.println("Dog health is:"+dog1.getHealth());
+        //System.out.println("Dog favourite activity is:"+dog1.getFavRelax());
+        //System.out.println("Dog favourite food is:"+dog1.getFavFood());
+        //System.out.println("Dog mood is:"+dog1.getMood());
         dog1.play();
 
         //food.setName("Biscuit");
@@ -100,7 +100,7 @@ public class AppMain {
        // vet.getName();
 
        // vet.setSpecialization("Dermathology");
-        vet1.getSpecialization();
+        //vet1.getSpecialization();
 
        // System.out.println("Veterinary name is:"+vet.getName());
        // System.out.println("Veterinary specialization is:"+vet.getSpecialization());
