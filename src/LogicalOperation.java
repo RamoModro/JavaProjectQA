@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class LogicalOperation {
@@ -364,14 +365,12 @@ public class LogicalOperation {
     }
 
 
-
-
     //Lab13 tema Array
 
-    public int[] populateArray(int max){
+    public int[] populateArray(int max) {
         int[] myArr = new int[max];
-        for (int i = 0; i < max; i++){
-            myArr[i] = i+1;
+        for (int i = 0; i < max; i++) {
+            myArr[i] = i + 1;
         }
         return myArr;
     }
@@ -381,12 +380,11 @@ public class LogicalOperation {
         int[] myArray = new int[100];
 
 
-
         for (int i = 1; i <= 100; i++) {
 
             myArray[i - 1] = i;
 
-            System.out.println(myArray[i-1]);
+            System.out.println(myArray[i - 1]);
 
         }
 
@@ -402,7 +400,7 @@ public class LogicalOperation {
         return (sum / array.length);
     }
 
-    public boolean isWordInArray(String[] arrString,String word) {
+    public boolean isWordInArray(String[] arrString, String word) {
         for (int i = 0; i < arrString.length; i++) {
             if (arrString[i].equals(word)) {
                 return true;
@@ -420,21 +418,21 @@ public class LogicalOperation {
             }
         }
         return evenArray;
-        }
+    }
 
 
     public int getNumberPositionInArray(int[] array, int number) {
-        for (int i = 0; i < array.length;i++) {
+        for (int i = 0; i < array.length; i++) {
             if (array[i] == number) {
-               return i;
+                return i;
             }
         }
         return 0;
     }
 
     public void printPattern() {
-        char[] line={'-','-','-','-','-','-','-','-','-','-'};
-        for (int i = 0; i <=10; i++) {
+        char[] line = {'-', '-', '-', '-', '-', '-', '-', '-', '-', '-'};
+        for (int i = 0; i <= 10; i++) {
             System.out.println(line);
         }
     }
@@ -455,7 +453,6 @@ public class LogicalOperation {
         }
 
         int[] finArray = new int[j];
-
 
 
         for (int i = 0; i < j; i++)
@@ -479,40 +476,82 @@ public class LogicalOperation {
         return arr[1];
     }
 
-    public int[] copyArray(int[]arr2, int[]arr3) {
-        for (int i = 0, j=0; i < arr2.length; i++) {
+    public int[] copyArray(int[] arr2, int[] arr3) {
+        for (int i = 0, j = 0; i < arr2.length; i++) {
             arr3[i] = arr2[i];
             j++;
         }
         return arr3;
+    }
+
+
+    //Lab 14 Tema Lists
+
+    public List<Integer> getPopulatedList(int max) {
+        List<Integer> myList = new ArrayList<>();
+        for (int i = 1; i <= max; i++) {
+            myList.add(i);
         }
+        return myList;
+    }
 
-
-
-
-        //Lab 14 Lists
-
-        public List<Integer> getPopulatedList(int max){
-            List<Integer> myList = new ArrayList<>();
-            for (int i = 1; i <= max; i++){
-                myList.add(i);
-            }
-            return myList;
+    //ex1
+    public void printList(List<Integer> myList) {
+        for (int i = 1; i <= myList.size(); i++) {
+            System.out.println(i);
         }
+    }
 
-        public void printListFromNumber(List<Integer> myList, int number){
-            for (int i = number; i <= myList.size(); i++){
-                System.out.println(myList.get(i-1));
-            }
+    //ex2
+    public void addNumberAtTheEndOfList(List<Integer> myList, int parametru) {
+        myList.add(parametru);
+        System.out.println(myList);
+    }
+
+    //ex3
+    public void printListFromNumber(List<Integer> myList, int number) {
+        for (int i = number; i <= myList.size(); i++) {
+            System.out.println(myList.get(i - 1));
         }
+    }
 
-        public void printListFromEnd(List<Integer> myList){
-            for(int i = myList.size()-1; i>=0;i--){
-                System.out.println(myList.get(i));
-            }
+    //ex4
+    public void printListFromEnd(List<Integer> myList) {
+        for (int i = myList.size() - 1; i >= 0; i--) {
+            System.out.println(myList.get(i));
         }
+    }
 
-}
+    //ex5
+    public void setStringPosition(List<String> myList, int index, String word) {
+        myList.add(index, word);
+        System.out.println(myList);
+    }
+
+    //ex6
+    public void setFirstPosition(List<Integer> myList, int number) {
+        myList.add(0, number);
+        System.out.println(myList);
+    }
+
+    //ex7
+    public void getIndexAndValue(List<Integer> myList) {
+        for (int i = 1; i <= myList.size(); i++)
+            System.out.println("Pe pozitia" + " " + myList.indexOf(i) + " " + "valoarea este" + " " + Integer.valueOf(i));
+    }
+
+    //ex8
+    public void getHighestNumber(List<Integer> myList){
+    for(int i = 0; i < 10; i++){
+        myList.add(i);
+    }
+    int highestNumber = Collections.max(myList);
+        System.out.println(highestNumber);
+}}
+
+
+
+
 
 
 
