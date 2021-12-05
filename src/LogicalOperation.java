@@ -57,7 +57,7 @@ public class LogicalOperation {
         return null;
     }
 
-    public void printNum(int number) {
+    public int printNum(int number) {
 
         switch (number) {
 
@@ -126,6 +126,7 @@ public class LogicalOperation {
                 System.out.println("Not allowed");
 
         }
+        return 0;
     }
 
     public boolean isNumberEven(int z) {
@@ -153,10 +154,11 @@ public class LogicalOperation {
             return c;
     }
 
-    public void countBackwards(int small, int big) {
-        for (int i = big; i >= small; i--) {
-            System.out.println(i);
+    public int countBackwards(int small, int big) {
+        for (int i = big; i > small; i--) {
+            System.out.println(i-1);
         }
+        return big;
     }
 
     public float getAverageFromInterval(int start, int max) {
@@ -185,10 +187,10 @@ public class LogicalOperation {
 
     //tema lab12 For Loops
 
-    public void verifyNo(int number) {
+    public int verifyNo(int number) {
         for (int i = number; number <= 100; number++) {
-            System.out.println(number);
         }
+        return number;
     }
 
     public void negativeNo(int no) {
@@ -375,20 +377,10 @@ public class LogicalOperation {
         return myArr;
     }
 
-    public int[] getArrayToHundred() {
-
-        int[] myArray = new int[100];
-
-
-        for (int i = 1; i <= 100; i++) {
-
-            myArray[i - 1] = i;
-
-            System.out.println(myArray[i - 1]);
-
+    public void printArray(int[] array){
+        for (int i = 0; i < array.length; i++){
+            System.out.println(array[i]);
         }
-
-        return myArray;
 
     }
 
@@ -419,7 +411,6 @@ public class LogicalOperation {
         }
         return evenArray;
     }
-
 
     public int getNumberPositionInArray(int[] array, int number) {
         for (int i = 0; i < array.length; i++) {
@@ -536,8 +527,9 @@ public class LogicalOperation {
 
     //ex7
     public void getIndexAndValue(List<Integer> myList) {
-        for (int i = 1; i <= myList.size(); i++)
-            System.out.println("Pe pozitia" + " " + myList.indexOf(i) + " " + "valoarea este" + " " + Integer.valueOf(i));
+        for (int i = 1; i < myList.size(); i++)
+            System.out.println("Pe pozitia" + " " + myList.indexOf(i-1) + " " + "valoarea este" + " "
+                    + Integer.valueOf(i));
     }
 
     //ex8
@@ -547,9 +539,18 @@ public class LogicalOperation {
     }
     int highestNumber = Collections.max(myList);
         System.out.println(highestNumber);
-}}
+}
 
 
+//Tema optionala Lists
+
+    public void swapTwoElements(List<String> days){
+        String a = days.get(0);
+        days.set(0, days.get(days.size() - 1));
+        days.set(days.size() - 1, a);
+                System.out.println(days);
+            }
+        }
 
 
 

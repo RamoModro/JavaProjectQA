@@ -31,7 +31,7 @@ public class Lab3 {
 //  6. Creati o metoda de tip String, care sa primeasca un parametru de tip int. Daca numarul primit este mai mare de 8,
 //  SAU egal cu 6, atunci sa se returneze “The amount of snow this winter was(cm): “ si numarul. Daca nu, sa printeze
 //  “The forecast snow is(cm):” si numarul. Apelati metoda in main() pentru a verifica daca functioneaza.
-        //System.out.println(op.snowForecast(2));
+        System.out.println(op.snowForecast(10));
 
 //  7.Creati o metoda de tip String, care sa primeasca un parametru de tip numar.
 //  Daca numarul e mai mare decat 3, SI nu egal cu 4, returnati “The number is greater than 3 and not equal to 4”.

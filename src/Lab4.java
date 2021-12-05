@@ -3,8 +3,7 @@ public class Lab4 {
     public static void main(String[] args) {
 
         LogicalOperation op = new LogicalOperation();
-
-//        op.countBackwards(3, 100);
+        op.countBackwards(3, 10);
 
 //        Write a program called SumAndAverage to
 //        produce the sum of 1, 2, 3, ..., to 100.
@@ -27,7 +26,7 @@ public class Lab4 {
         //2. Creati o metoda in clasa LogicalOp, care sa primeasca un numar ca si parametru.
         // Metoda sa verifice numrul primit, si sa afiseze in consola o numaratoare pana la -100,pornind de la
         // numarul primit ca si parametru. Atentie la crearea tipului metodei, deoarece metoda afiseaza, nu returneaza.
-        //op.negativeNo(0);
+        //op.negativeNo(-50);
 
         //3. Creati o metoda in clasa LogicalOp, care sa primeasca doi parametrii de tip numar.
         // Metoda sa afiseze o numaratoare intre cele doua numere primite, pornind de la primul parametru primit,

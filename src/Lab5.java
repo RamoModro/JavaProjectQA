@@ -17,7 +17,7 @@ public class Lab5 {
 
 //        System.out.println(op.isValueInArray(array3, 51));
 
-//        String[] myStrings = {"a", "b", "c", "d"};
+        String[] myStrings = {"a", "b", "c", "d"};
 
         //2.  In clasa LogicalOp, creati o metoda care sa scrie pe un array de 100 de pozitii, valorile de la 1 la 100.
         // Sa se afiseze progresul in consola pe tot parcursul.
@@ -94,6 +94,7 @@ public class Lab5 {
         //int[] arr2 = new int[]{1, 2, 3, 4, 5};
         //int[] arr3 = new int[arr2.length];
         //op.copyArray(arr2,arr3);
+
 
     }
 }
