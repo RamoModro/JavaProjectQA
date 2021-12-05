@@ -156,7 +156,7 @@ public class LogicalOperation {
 
     public int countBackwards(int small, int big) {
         for (int i = big; i > small; i--) {
-            System.out.println(i-1);
+            System.out.println(i - 1);
         }
         return big;
     }
@@ -377,8 +377,8 @@ public class LogicalOperation {
         return myArr;
     }
 
-    public void printArray(int[] array){
-        for (int i = 0; i < array.length; i++){
+    public void printArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
         }
 
@@ -528,30 +528,41 @@ public class LogicalOperation {
     //ex7
     public void getIndexAndValue(List<Integer> myList) {
         for (int i = 1; i < myList.size(); i++)
-            System.out.println("Pe pozitia" + " " + myList.indexOf(i-1) + " " + "valoarea este" + " "
+            System.out.println("Pe pozitia" + " " + myList.indexOf(i - 1) + " " + "valoarea este" + " "
                     + Integer.valueOf(i));
     }
 
     //ex8
-    public void getHighestNumber(List<Integer> myList){
-    for(int i = 0; i < 10; i++){
-        myList.add(i);
-    }
-    int highestNumber = Collections.max(myList);
+    public void getHighestNumber(List<Integer> myList) {
+        for (int i = 0; i < 10; i++) {
+            myList.add(i);
+        }
+        int highestNumber = Collections.max(myList);
         System.out.println(highestNumber);
-}
+    }
 
 
 //Tema optionala Lists
 
-    public void swapTwoElements(List<String> days){
+    public void swapTwoElements(List<String> days) {
         String a = days.get(0);
         days.set(0, days.get(days.size() - 1));
         days.set(days.size() - 1, a);
-                System.out.println(days);
-            }
-        }
+        System.out.println(days);
+    }
 
+
+//  Ex 5 Try-Catch
+
+    public void getValueOnGivenIndex(int value) {
+        try {
+            int[] myArr = populateArray(10);
+            System.out.println(myArr[value]);
+        } catch (Exception e) {
+            System.out.println("Inside catch, number too large");
+        }
+    }
+}
 
 
 
