@@ -89,7 +89,7 @@ public class ReadFromKeyboard {
     //ex 3
     public int[] getArray(int size) {
         int[] myArr = new int[size];
-        System.out.println("Insert values from array.");
+        System.out.println();
         for (int i = 0; i < myArr.length; i++) {
             myArr[i] = getInt();
         }
@@ -100,19 +100,20 @@ public class ReadFromKeyboard {
     //ex 4
     public List<Integer> getList() {
         List<Integer> myList = new ArrayList<>();
-        System.out.print("Insert a value in the List: ");
         do {
             Scanner scan = new Scanner(System.in);
             try {
+                System.out.print("Insert a value in the List: ");
                 for (int i = 0; i <= myList.size(); i++) {
                     myList.add(i, scan.nextInt());
                     System.out.println(myList);
                 }
-            } catch (Exception e) {
+            } catch (InputMismatchException err) {
                 System.out.println("Program stopped");
+                break;
             }
-        } while (!true) ;
+        } while (true) ;
+
         return myList;
-    }
-    }
+    }}
 

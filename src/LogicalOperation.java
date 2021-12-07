@@ -554,12 +554,11 @@ public class LogicalOperation {
 
 //  Ex 5 Try-Catch
 
-    public void getValueOnGivenIndex(int value) {
+    public void getValueOnGivenIndex(int[] myArr, int value) {
         try {
-            int[] myArr = populateArray(10);
-            System.out.println(myArr[value]);
-        } catch (Exception e) {
-            System.out.println("Inside catch, number too large");
+            System.out.println("The value on input index is:" + myArr[value]);
+        } catch (IndexOutOfBoundsException error) {
+            System.out.println("Inside catch, number too large!");
         }
     }
 }

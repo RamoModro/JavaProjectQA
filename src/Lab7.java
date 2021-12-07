@@ -1,3 +1,4 @@
+import java.util.List;
 import java.util.Scanner;
 
 
@@ -41,13 +42,16 @@ public class Lab7 {
 //  4. In clasa Read, creati o metoda care sa returneze o lista de numere populate de la tastatura.
 //  Metoda nu v-a primii parametru lungimea. In rezolvarea ei trebuie folosit try-catch.(Hint: a se citi de la
 //  tastatura atata timp cat valoarea primita e numar, cand nu mai e numar, sa se intrerupa citirea)
-        //read.getList();
+        List<Integer> myList = read.getList();
+        System.out.println(read.getList());
 
 //5. In clasa LogicalOp, creati o metoda care sa primeasca un array de numere ca si parametru, si un numar.
 // Fara a folosi conditii, si folosind un try-catch, afisati valoarea de pe pozitia numarului primit,
 // iar daca valoarea numarului este mai mare decat numarul de pozitii din array, afisati textul:
 // "Inside catch, number too large".
-        op.getValueOnGivenIndex(7);
+        //int[] Arr = op.populateArray(3);
+        //int value = read.getInt();
+        //op.getValueOnGivenIndex(Arr, value);
 
 }}
 
